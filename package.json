@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format:check":"prettier . --check",
-    "format:fix":"prettier . --write"
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,13 @@
   },
   "homepage": "https://github.com/gauravsgandhi/auth-service#readme",
   "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.14.10",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.1.0",
     "prettier": "3.3.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
   }
 }
